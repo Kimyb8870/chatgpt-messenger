@@ -6,7 +6,6 @@ const Sidebar = () => {
       <div className="flex-1">
         <div>
           <NewChat />
-
           <div>{/* ModelSelection */}</div>
 
           {/* Map through the chatRows */}
