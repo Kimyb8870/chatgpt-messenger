@@ -45,9 +45,7 @@ const ChatInput = ({ chatId }: Props) => {
         chatId,
         "messages"
       ),
-      {
-        message,
-      }
+      message
     );
 
     // Toast Notification to say Loading
