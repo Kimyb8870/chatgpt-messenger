@@ -6,6 +6,26 @@ import { authOptions } from "@/pages/api/auth/[...nextauth]";
 import Login from "@/components/Login";
 import ClientProvider from "@/components/ClientProvider";
 
+export const metadata = {
+  title: "chatGPT-messenger",
+  description: "chatGPT-messenger",
+  author: "kimyb",
+  keyword: "chatGPT",
+  openGraph: {
+    title: "chatGPT-messenger",
+    images: [
+      {
+        url: "https://links.papareact.com/2i6",
+        width: 800,
+        height: 800,
+      },
+    ],
+    robots: {
+      index: true,
+    },
+  },
+};
+
 export default async function RootLayout({
   children,
 }: {
@@ -15,7 +35,6 @@ export default async function RootLayout({
 
   return (
     <html>
-      <head />
       <body>
         <SessionProvider session={session}>
           {!session ? (
